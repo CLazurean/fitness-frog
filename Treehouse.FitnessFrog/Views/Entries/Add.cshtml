@@ -33,7 +33,7 @@
 
             <div class="form-group">
                 <label for="Exclude" class="control-label">Exclude</label>
-                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@ViewBag.Exclude" />
+                <input type="text" id="Exclude" name="Exclude" class="form-control" value="@(ViewBag.Exclude != null ? ViewBag.Exclude.ToString() : "")" />
             </div>
 
         </div>
@@ -42,7 +42,7 @@
 
             <div class="form-group">
                 <label for="Notes" class="control-label">Notes</label>
-                <textarea id="Notes" name="Notes" class="form-control" rows="14" cols="20">@ViewBag.Notes"</textarea>
+                <textarea id="Notes" name="Notes" class="form-control" rows="14" cols="20">@ViewBag.Notes</textarea>
             </div>
 
         </div>
